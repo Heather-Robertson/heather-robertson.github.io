@@ -1,28 +1,94 @@
+/* #871f3e  #871f72  #681f87  #341f87  #1f3e87  #1f7287 */
+
 body {
-  background-color: LightGray;
 }
 
 h1 {
-  color: DodgerBlue;
+  color: #1f3e87;
+  text-align: center;
 }
 
 p {
-  color: MidnightBlue;
+  color: #1f3e87;
 }
 
-nav {
-  .active {
-    background-color: #DodgerBlue;
-  }
-  .hover {
-    background-color: #LightSkyBlue;
-  }
+img{
+  float: left;
+  width:170px;
+  height:170px;
+  margin-right:15px;
 }
 
-nav a {
-  border: 1 px Solid Blue;
-  border-radius: 5 px;
-  color: MidnightBlue;
-  hover: DarkBlue;
-  visited: MidnightBlue
-  }
+.heading {
+  background-color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #341f87;
+}
+
+.flex-container > div:hover:not(.active) {
+  background-color: #681f87;
+}
+
+.flex-container > .active {
+  background-color: #871f72;
+}
+
+.flex-container > div > a { 
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.reflinks {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+
+.reflinks > div{
+  margin: 10px;
+}
+
+.reflinks > div:not(.contact) {
+  margin: 6px;
+  width: 20%;
+  text-align: center;
+  border: 2px;
+  border-radius: 20px;
+  background-color: #341f87;
+}
+
+.reflinks > div:hover:not(.contact) {
+  background-color: #681f87;
+}
+
+.reflinks > div > a { 
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+}
+
+
