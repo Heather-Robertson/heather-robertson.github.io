@@ -1,22 +1,45 @@
 /* #871f3e  #871f72  #681f87  #341f87  #1f3e87  #1f7287 */
 
-body {
-}
-
 h1 {
   color: #1f3e87;
   text-align: center;
+}
+
+h2 {
+  color: #1f3e87;
+  text-align: center;
+}
+
+h3{
+  color: #1f3e87;
 }
 
 p {
   color: #1f3e87;
 }
 
-img{
-  float: left;
-  width:170px;
-  height:170px;
-  margin-right:15px;
+ul {
+  color: #1f3e87;
+}
+
+button{
+  height: 3%;
+  width: 3%;
+  float: right;
+  background-color: #1f3e87;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #1f3e87;
+  color: white;
+}
+
+.gallerypic {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left:25%;
+  margin-top:5%;
 }
 
 .heading {
@@ -24,6 +47,72 @@ img{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #1f3e87;
+}
+
+div.gallery1 {
+  border: 3px solid #1f3e87; 
+  border-radius: 5%;
+  width: 100%; 
+  display: block;
+  margin-left:100%;
+}
+
+div.gallery2 {
+  border: 3px solid #1f3e87; 
+  border-radius: 5%;
+  width: 100%; 
+  display: block;
+  margin-left:50%
+  /* position: relative; 
+  left: 100%; */
+}
+
+div.gallery3 {
+  border: 3px solid #1f3e87;
+  border-radius: 5%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #1f3e87
+}
+
+div.desc > a {
+  color:#1f3e87;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.3332%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .flex-container {
@@ -63,6 +152,9 @@ img{
   position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 0;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #1f3e87;
 }
 
 .reflinks > div{
@@ -91,4 +183,45 @@ img{
   padding: 8px;
 }
 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 9.09%;
+  padding: 1px;
+}
 
+/* Style the images inside the grid */
+.column img {
+  cursor: pointer; 
+  border: 3px solid #1f3e87; 
+  border-radius: 2%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  width: 25%;
+  position:relative;
+  display: none;
+  left:37.5%;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: relative;
+  top: 30px;
+  left: 92%;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
