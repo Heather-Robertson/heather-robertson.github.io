@@ -90,23 +90,10 @@ div.desc > a {
   box-sizing: border-box;
 }
 
-.responsive {
+.gallery-space {
   padding: 0 6px;
   float: left;
   width: 33.3332%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
 }
 
 .clearfix:after {
@@ -115,12 +102,14 @@ div.desc > a {
   clear: both;
 }
 
-.flex-container {
+/* HEADER */
+.header-buttons-space {
   display: flex;
   justify-content: center;
 }
 
-.flex-container > div {
+/* header buttons */
+.header-buttons-space > div {
   width: 30%;
   margin: 10px;
   text-align: center;
@@ -128,15 +117,18 @@ div.desc > a {
   background-color: #341f87;
 }
 
-.flex-container > div:hover:not(.active) {
+/* header buttons on hover*/
+.header-buttons-space > div:hover:not(.active) {
   background-color: #681f87;
 }
 
-.flex-container > .active {
+/* active page's header*/
+.header-buttons-space > .active {
   background-color: #871f72;
 }
 
-.flex-container > div > a { 
+/* header buttons' text*/
+.header-buttons-space > div > a { 
   display: inline-block;
   color: white;
   text-align: center;
@@ -144,7 +136,9 @@ div.desc > a {
   padding: 8px;
 }
 
-.reflinks {
+/* FOOTER */
+/* footer space */
+.footer {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -157,11 +151,13 @@ div.desc > a {
   border-top-color: #1f3e87;
 }
 
-.reflinks > div{
+/* footer elements*/
+.footer > div{
   margin: 10px;
 }
 
-.reflinks > div:not(.contact) {
+/* footer buttons*/
+.footer > div:not(.contact) {
   margin: 6px;
   width: 20%;
   text-align: center;
@@ -170,11 +166,13 @@ div.desc > a {
   background-color: #341f87;
 }
 
-.reflinks > div:hover:not(.contact) {
+/* footer buttons on hover*/
+.footer > div:hover:not(.contact) {
   background-color: #681f87;
 }
 
-.reflinks > div > a { 
+/* footer buttons' text*/
+.footer > div > a { 
   display: inline-block;
   color: white;
   font-size: 14px;
@@ -183,25 +181,22 @@ div.desc > a {
   padding: 8px;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/*IMAGE GRID*/
+/* Columns for the image grid */
 .column {
   float: left;
   width: 9.09%;
   padding: 1px;
 }
 
-/* Style the images inside the grid */
+/* style the images inside the grid */
 .column img {
   cursor: pointer; 
   border: 3px solid #1f3e87; 
   border-radius: 2%;
 }
 
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
+/* Clearing floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -209,7 +204,7 @@ div.desc > a {
 }
 
 /* The expanding image container */
-.container {
+.expanded-view {
   width: 25%;
   position:relative;
   display: none;
