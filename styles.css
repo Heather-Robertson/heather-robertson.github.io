@@ -208,6 +208,17 @@
       width: 100%;
     }
 
+    .img-grid {
+      display: grid;
+      grid-template-columns: 60% 30%;
+    }
+
+    .img-grid div{
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
     /* #research { background: linear-gradient(#ffffff, var(--accent-soft)); }
     #making   { background: linear-gradient(#ffffff, var(--accent-soft)); }
     #makeup   { background: linear-gradient(#ffffff, var(--accent-soft)); } */
