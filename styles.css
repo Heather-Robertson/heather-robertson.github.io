@@ -130,7 +130,6 @@
       /* display: inline-block;
       vertical-align: top; */
       padding: 0rem 0rem;
-      max-width: 60rem;
       color: var(--muted);
       font-size: 1.05rem;
     }
@@ -210,13 +209,15 @@
 
     .img-grid {
       display: grid;
-      grid-template-columns: 60% 30%;
+      grid-template-columns: auto auto auto auto auto;
     }
 
     .img-grid div{
-      background-color: #f1f1f1;
-      border: 1px solid black;
       padding: 10px;
+    }
+
+    .img-grid img{
+      width: 100%;
     }
 
     /* #research { background: linear-gradient(#ffffff, var(--accent-soft)); }
