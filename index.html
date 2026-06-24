@@ -4,17 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="favicon.png">
-  <title>Heather Robertson</title>
+  <title>Heather Robertson | Computational Design and Creative Technology</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!--NAV-->
-  <header>
-    <nav class="nav">
-      <div class="name">Heather Robertson</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand-link" href="index.html" aria-current="page">Heather Robertson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="Research.html">Research</a></li>
         <li><a href="Making.html">Making</a></li>
         <li><a href="About.html">About Me</a></li>
@@ -23,46 +25,52 @@
     </nav>
   </header>
 
-  <!--HERO-->
-  <div class="hero">
-    <img src = "proheadshotcrop.jpg" style="top:0">
-    <h1>Heather Robertson</h1>
-    <p><b>Computational Design and Creative Technology</b></p>
-    <p>I work to understand and build systems that bridge computation, design, and human experience for the progression of social good. </p>
-    <p style = "padding-top: 1rem;"><a href = "About.html" class="link-button">Learn more about me ➟</a></p>
-    <br>
-  </div>
-     
-  <main>
-    <!--OVERVIEW-->
-    <!-- style = "border: 2px solid transparent; border-image: conic-gradient(var(--accent-red), var(--accent-violet), var(--accent-blue), var(--accent-teal), var(--accent-indigo), var(--accent-fuschia)) 30 stretch;" -->
-    <section id="overview">
-    <h2 style="justify-self: center;">Explore My Work</h2>
-    <br>
-    <div class="card-grid" style="margin-top:0">
-        <a href = "Research.html">
-          <div class="card" style="place-items:center">
-            <h2>Research</h2>
-            <p>Generative Design & Computational Geometry</p>
-          </div></a>
-          <a href = "Making.html">
-          <div class="card" style="place-items:center">
-            <h2>Making</h2>
-            <p>Design Engineering & Physical Computation</p>
-        </div></a>
+  <section class="home-hero" aria-labelledby="intro-title">
+    <div class="portrait-panel" aria-label="Portrait of Heather Robertson">
+      <img src="proheadshotcrop.jpg" alt="Heather Robertson smiling outdoors">
+      <!-- <div class="portrait-note">
+        <p>Designer, researcher, maker, and recent Brown/RISD Design Engineering graduate.</p>
+      </div> -->
+    </div>
+    <div>
+      <p class="eyebrow">Computational Design and Creative Technology</p>
+      <h1 id="intro-title">Heather Robertson</h1>
+      <p class="lede">I work to understand and build systems that bridge computation, design, and human experience for the progression of social good.</p>
+      <div class="action-row">
+        <a href="#map" class="link-button">Portfolio of Work</a>
+        <a href="About.html" class="secondary-button">About Me</a>
+      </div>
+    </div>
+    
+  </section>
+
+  <main id="main">
+    <section class="split-section" aria-labelledby="work-title">
+      <div id="map">
+        <p class="eyebrow">Portfolio Map</p>
+        <h2 id="work-title">Explore my work by mode of inquiry.</h2>
+        <p class="section-intro">The site is organized around two connected practices: research that studies computational and material systems, and making that tests ideas through tangible prototypes.</p>
+      </div>
+      <div class="card-grid" style="margin-top: 0;">
+        <a href="Research.html" class="project-card">
+          <h3>Research</h3>
+          <p>Generative Design & Computational Geometry</p>
+        </a>
+        <a href="Making.html" class="project-card">
+          <h3>Making</h3>
+          <p>Design Engineering & Physical Computation</p>
+        </a>
       </div>
     </section>
   </main>
 
-  <!--FOOTER-->
   <footer id="contact">
-      <div class="footer-links">
-        Contact Me:
-        <a href="mailto:robertsonheatherp@gmail.com">Email</a>
-        <a href="tel:423-767-4905">Phone</a>
-        <a href="https://www.linkedin.com/in/heather-robertson-profile/">LinkedIn</a>
-      </div>
+    <div class="footer-links">
+      <span>Contact Me:</span>
+      <a href="mailto:robertsonheatherp@gmail.com">Email</a>
+      <a href="tel:423-767-4905">Phone</a>
+      <a href="https://www.linkedin.com/in/heather-robertson-profile/">LinkedIn</a>
+    </div>
   </footer>
-
 </body>
 </html>
