@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <title>Création | Heather Robertson</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand-link" href="index.html">Heather Robertson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Research.html">Recherche</a></li>
+        <li><a href="Making.html" aria-current="page">Création</a></li>
+        <li><a href="About.html">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="language-selector">
+          <button class="language-button">
+            FR
+            <span class="arrow">▾</span>
+          </button>
+          <div class="language-menu">
+            <a href="../Making.html" data-lang="en">English</a>
+            <a href="Making.html" data-lang="fr">Français</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow">Création</p>
+    <h1>Des prototypes pour des mondes possibles.</h1>
+    <p class="lede">Personne ne fera le travail de libération à la place des personnes opprimées. C’est en créant notre propre monde, en pratiquant la « fabulation spéculative » décrite par Donna Haraway, que nous nous libérons de l’oppression et de l’altérité imposée. Nous devons concevoir et fabriquer nos réalités afin qu’elles reflètent les mondes imaginés dans lesquels nous voulons vivre.</p>
+  </div>
+
+  <main id="main">
+    <section aria-labelledby="making-projects">
+      <header>
+        <h2 id="making-projects">Projets de création</h2>
+      </header>
+
+      <div class="project-tools" data-project-browser>
+        <div class="filter-row" aria-label="Filtrer les projets">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter-button" type="button" data-filter="design">Design et fabrication</button>
+          <button class="filter-button" type="button" data-filter="computation">Informatique</button>
+          <button class="filter-button" type="button" data-filter="art">Beaux-arts</button>
+        </div>
+      </div>
+
+      <div class="card-grid" data-project-grid>
+        <a href="PandaBugs.html" class="project-card" data-tags="design computation" data-title="Panda Bugs Inc." data-description="Site web, identité et architecture de l’information pour Panda Bugs">
+          <h3>Panda Bugs, Inc.</h3>
+          <img src="../MakingPictures/pbPreview.png" alt="Aperçu du projet de site web Panda Bugs">
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+            <span class="tag computation">Informatique</span>
+          </div>
+        </a>
+        <a href="BatResources.html" class="project-card" data-tags="design" data-title="Bat Resources" data-description="Ressources éducatives fabriquées pour la conservation des chauves-souris">
+          <h3>Bat Resources</h3>
+          <img src="../MakingPictures/BatPreview.JPG" alt="Aperçu du projet Bat Resources">
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+          </div>
+        </a>
+        <a href="Toss&Tow.html" class="project-card" data-tags="design" data-title="Toss N Tow" data-description="Prototype physique portable pour le transport et le rangement">
+          <h3>Toss N' Tow</h3>
+          <img src="../MakingPictures/TossNTowPreview.jpeg" alt="Aperçu du prototype Toss N' Tow">
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+          </div>
+        </a>
+        <a href="LipstickFabulator.html" class="project-card" data-tags="design computation" data-title="Lipstick Fabulator" data-description="Computation physique et fabrication cosmétique automatisée">
+          <h3>Lipstick Fabulator</h3>
+          <img src="../MakingPictures/LipstickPreview.jpeg" alt="Aperçu du prototype Lipstick Fabulator">
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+            <span class="tag computation">Informatique</span>
+          </div>
+        </a>
+      </div>
+      <p class="empty-state" data-empty-state hidden>Aucun projet ne correspond aux filtres actuels.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-links">
+      <span>Me contacter :</span>
+      <a href="mailto:robertsonheatherp@gmail.com">Email</a>
+      <a href="tel:423-767-4905">Téléphone</a>
+      <a href="https://www.linkedin.com/in/heather-robertson-profile/">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

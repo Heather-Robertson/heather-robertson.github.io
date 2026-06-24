@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <title>Heather Robertson | Design computationnel et technologies créatives</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand-link" href="index.html" aria-current="page">Heather Robertson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="Research.html">Recherche</a></li>
+        <li><a href="Making.html">Création</a></li>
+        <li><a href="About.html">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="language-selector">
+          <button class="language-button">
+            FR
+            <span class="arrow">▾</span>
+          </button>
+          <div class="language-menu">
+            <a href="../index.html" data-lang="en">English</a>
+            <a href="index.html" data-lang="fr">Français</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home-hero" aria-labelledby="intro-title">
+    <div class="portrait-panel" aria-label="Portrait de Heather Robertson">
+      <img src="../proheadshotcrop.jpg" alt="Heather Robertson souriant en extérieur">
+    </div>
+    <div>
+      <p class="eyebrow">Design computationnel et technologies créatives</p>
+      <h1 id="intro-title">Heather Robertson</h1>
+      <p class="lede">Je cherche à comprendre et à construire des systèmes qui relient l'informatique, le design et l’expérience humaine afin de faire avancer le bien social.</p>
+      <div class="action-row">
+        <a href="#map" class="link-button">Portfolio</a>
+        <a href="About.html" class="secondary-button">À propos</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="split-section" aria-labelledby="work-title">
+      <div id="map">
+        <p class="eyebrow">Carte du portfolio</p>
+        <h2 id="work-title">Explorez mon travail par mode d’enquête.</h2>
+        <p class="section-intro">Le site s’organise autour de deux pratiques liées : la recherche, qui étudie les systèmes computationnels et matériels, et la création, qui met les idées à l’épreuve grâce à des prototypes tangibles.</p>
+      </div>
+      <div class="card-grid" style="margin-top: 0;">
+        <a href="Research.html" class="project-card">
+          <h3>Recherche</h3>
+          <p>Design génératif et géométrie computationnelle</p>
+        </a>
+        <a href="Making.html" class="project-card">
+          <h3>Création</h3>
+          <p>Ingénierie du design et computation physique</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-links">
+      <span>Me contacter :</span>
+      <a href="mailto:robertsonheatherp@gmail.com">Email</a>
+      <a href="tel:423-767-4905">Téléphone</a>
+      <a href="https://www.linkedin.com/in/heather-robertson-profile/">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

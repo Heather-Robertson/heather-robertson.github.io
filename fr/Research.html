@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <title>Recherche | Heather Robertson</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand-link" href="index.html">Heather Robertson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Research.html" aria-current="page">Recherche</a></li>
+        <li><a href="Making.html">Création</a></li>
+        <li><a href="About.html">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="language-selector">
+          <button class="language-button">
+            FR
+            <span class="arrow">▾</span>
+          </button>
+          <div class="language-menu">
+            <a href="../Research.html" data-lang="en">English</a>
+            <a href="Research.html" data-lang="fr">Français</a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p class="eyebrow">Recherche</p>
+    <h1>L’enquête comme pratique de création.</h1>
+    <p class="lede">Nous ne pouvons pas espérer répondre correctement aux enjeux que nous ne comprenons pas véritablement. L’engagement envers l’enquête, l’observation et l’échange ouvert des idées est indissociable de tout engagement réel envers la justice sociale.</p>
+  </div>
+
+  <main id="main">
+    <section aria-labelledby="research-projects">
+      <header>
+        <h2 id="research-projects">Projets de recherche</h2>
+      </header>
+
+      <div class="project-tools" data-project-browser>
+        <div class="filter-row" aria-label="Filtrer les projets">
+          <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter-button" type="button" data-filter="design">Design et fabrication</button>
+          <button class="filter-button" type="button" data-filter="computation">Informatique</button>
+          <button class="filter-button" type="button" data-filter="art">Beaux-arts</button>
+        </div>
+      </div>
+
+      <div class="card-grid" data-project-grid>
+        <a href="Diceplay.html" class="project-card" data-tags="design computation art" data-title="Diceplay" data-description="Un canevas modulaire pour la composition physique d’images">
+          <h3>Diceplay</h3>
+          <p>Un canevas modulaire pour la composition physique d’images</p>
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+            <span class="tag computation">Informatique</span>
+            <span class="tag art">Beaux-arts</span>
+          </div>
+        </a>
+        <a href="../ResearchFiles/RobertsonHeatherThesis.pdf" class="project-card" data-tags="computation" data-title="Mémoire de recherche de premier cycle" data-description="Pavabilité des patrons de solides platoniciens en dimensions multiples">
+          <h3>Mémoire de fin d'études avec mention</h3>
+          <p>Tilability of Platonic Solid Nets in Multiple Dimensions</p>
+          <div class="tag-list">
+            <span class="tag computation">Informatique</span>
+          </div>
+        </a>
+        <a href="Mothitor.html" class="project-card" data-tags="design computation" data-title="Mothitor" data-description="Outils computationnels pour l’observation à distance des papillons de nuit">
+          <h3>Mothitor</h3>
+          <p>Outils computationnels pour l’observation à distance des papillons de nuit</p>
+          <div class="tag-list">
+            <span class="tag design">Design</span>
+            <span class="tag computation">Informatique</span>
+          </div>
+        </a>
+      </div>
+      <p class="empty-state" data-empty-state hidden>Aucun projet ne correspond aux filtres actuels:</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-links">
+      <span>Me contacter :</span>
+      <a href="mailto:robertsonheatherp@gmail.com">Email</a>
+      <a href="tel:423-767-4905">Téléphone</a>
+      <a href="https://www.linkedin.com/in/heather-robertson-profile/">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
