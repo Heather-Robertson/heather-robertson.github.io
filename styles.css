@@ -802,8 +802,6 @@ footer {
   color: var(--accent-blue);
 
   text-decoration: none;
-
-  transition: background 0.2s ease;
 }
 
 .language-menu a:hover {
